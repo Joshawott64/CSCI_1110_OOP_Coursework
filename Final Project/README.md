@@ -8,12 +8,13 @@ This code was designed to stretch my abilities and understanding of developing G
 
 ## How to run
 Upon startup the user is presented with two buttons: Forge and Gallery. Upon clicking the Gallery button, the user can view every Saber object that has been created. By default, there are four pre-built Sabers in the gallery. Upon clicking on the Forge button, the user is taken to a menu where they can create and name their own custom Saber object. There are four FlowPanes that correspond to the four components in a Saber object and are filled with buttons that have graphical previews of what each component looks like. When clicking on one of these buttons, the Saber preview in the center updates in real time. The user can name their Saber with the textfield at the bottom. Clicking the Save button adds the user's Saber to the gallery and adds it to the arraylist that contains all Saber objects. The Discard button navigates back to the Main Menu without saving the object anywhere.
-![Code Running](/Final Project/SabersmithyDemo.png)
+![Code Running](SabersmithyDemo.png)
 
 ## Code Example
 This code snippet shows the methods that were used to change the properties of a custom Saber object. These methods allowed for multiple actions to be taken when a button is pressed.
-'''
-// Changes customSaber's emitter
+```
+
+	// Changes customSaber's emitter
 	public static void changeEmitter(Saber customSaber, 
 			VBox customSaberBox, Image newEmitter) {
 		customSaber.setEmitter(newEmitter);
@@ -44,4 +45,4 @@ This code snippet shows the methods that were used to change the properties of a
 		ImageView newPommelView = new ImageView(newPommel);
 		customSaberBox.getChildren().set(3, newPommelView);
 	}
-'''
+```
